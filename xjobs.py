@@ -50,7 +50,9 @@ def filter_tweets(df, sort_by='created_at'):
 # example usage
 if __name__ == "__main__":
     job_keywords = ['python developer', 'software engineer', 'software developer','backend engineer', 'frontend engineer','full stack engineer', 'ux engineer', 'product manager', 'ux researcher', 'frontend dev', 'backend dev']
-    context_terms = ['hiring', 'we are hiring', 'is hiring', 'open positions', 'hiring alert', 'hiring now', 'hiring urgently']
+    #search is customized by job keywords
+    context_terms = ['hiring', 'we are hiring', 'is hiring', 'open positions', 'hiring alert', 'hiring now', 'hiring urgently', 'we\'re hiring']
+    # algorithm automatically searches for these type of tweets
     days = 3
     exclude_words = ['cracked', 'nsfw']
     max_tweets = 25
